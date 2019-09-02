@@ -4,16 +4,56 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/Card";
 
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    
-    <h1>Hello!</h1>
-    <h2>I'm Duy, a full-stack developer living in Atlanta.</h2>
-    <p>Need a developer? <Link to="/contact">Contact me.</Link></p>
-    
+    <div className="Hero">
+      <div className="HeroGroup">
+        <SEO title="Home" />
+        <video className="video" muted autoPlay loop>
+          <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4" type="video/mp4"/>
+        </video>
+        <h1>Hello! <br/>I'm Duy.</h1>
+        <p>A full-stack developer living in Atlanta</p>
+        <Link className="contactBtn" to="/contact">Contact me</Link>
+
+        <div className="Logos">
+          <img src={require('../images/javascript.png')} width="80"/>
+          <img src={require('../images/css.png')} width="80"/>
+          <img src={require('../images/nodejslogo.png')} width="80"/>
+          <img src={require('../images/react.png')} width="80"/>
+          <img src={require('../images/pythondjango.png')} width="80"/>
+        </div>
+
+        <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="white">
+            <animate 
+              repeatCount="indefinite"
+              fill="freeze"
+              attributeName="d"
+              dur="10s"
+              values="M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z;
+              
+              M0 86.3149C316 86.315 444 159.155 884 51.1554C1324 -56.8446 1320.29 34.1214 1538 70.4063C1814 116.407 2156 188.408 2560 86.315V232.317L0 232.316V86.3149Z;
+
+              M0 53.6584C158 11.0001 213 0 363 0C513 0 855.555 115.001 1154 115.001C1440 115.001 1626 -38.0004 2560 53.6585V199.66L0 199.66V53.6584Z;
+
+              M0 25.9086C277 84.5821 433 65.736 720 25.9086C934.818 -3.9019 1214.06 -5.23669 1442 8.06597C2079 45.2421 2208 63.5007 2560 25.9088V171.91L0 171.91V25.9086Z
+              "
+            />
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div className="cards">
+      <h1>Projects</h1>
+      <Card 
+        title="POS System"
+        text="Using: React, Django" 
+      />
+    </div>
   </Layout>
 )
 

@@ -1,32 +1,16 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
-import headerStyles from './header.module.scss'
+import React from 'react'
+import './header.css'
 
 const Header = ({ siteTitle }) => (
-  <header className={headerStyles.header}>
-    <div>
-      <h1>
-        <Link className={headerStyles.title} to="/">
-          Duy Nguyen
-        </Link>
-      </h1>
-      <nav>
-        <ul className={headerStyles.navList}>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/">Home</Link>
-          </li>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/about">About</Link>
-          </li>
-          <li>
-            <Link className={headerStyles.navItem} activeClassName={headerStyles.activeNavItem} to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
+  <header className="Header">
+    <div className="HeaderGroup">
+      <Link to="/"><button>Home</button></Link>
+      <Link to="/projects"><button>Projects</button></Link>
+      <Link className="logo" to="/"><img src={require('../images/duy1.jpg')} /></Link>
+      <Link to="/about"><button>About</button></Link>
+      <Link to="/contact"><button>Contact</button></Link>
     </div>
   </header>
 )
