@@ -115,7 +115,10 @@ const IndexPage = () => (
         <h1>Contacts</h1>
         <p>I'm happy to hear from you, regardless whether you are interested in my skills or suggestions to improve my projects.
           Please contact me.</p>
-        <a>E-Mail</a>
+        <a className="emailBtn" href="mailto:duyl.nguyen.ga@gmail.com">
+          <img className="sendMail" src={require('../images/send-email1.jpeg')}/>
+          E-Mail
+        </a>
         <p>duyl.nguyen.ga@gmail.com</p>
         <div className="boxGroup">
         <Wrapper 
