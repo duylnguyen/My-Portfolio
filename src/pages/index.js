@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/Card"
+import Container from "../components/Container"
 
 const IndexPage = () => (
   <Layout>
@@ -78,6 +79,34 @@ const IndexPage = () => (
         </video>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sunt expedita neque facilis ad necessitatibus deleniti a accusamus officia ullam magni excepturi, corporis qui, vitae animi quaerat, aliquid est in.</p>
         <h1>Skills</h1>
+        <div className="cardGroup">
+          <Container 
+            title="Languages"
+            text="JavaScript"
+            text1="Python"
+            image={require('../images/paperBackground.jpg')} 
+          />
+          <Container
+            title="Frameworks"
+            text="React"
+            text1="Node.js"
+            text2="Django"
+            image={require('../images/paperBackground.jpg')} 
+          />
+          <Container
+            title="Libraries"
+            text="Semantic-React-UI"
+            text1="jQuery"
+            text2="BootStrap4"
+            image={require('../images/paperBackground.jpg')} 
+          />
+          <Container 
+            title="Database"
+            text="MongoDB"
+            text1="PostgreSQL"
+            image={require('../images/paperBackground.jpg')} 
+          />
+        </div>
       </div>
     </div>
     <div id="contact" className="contact">
