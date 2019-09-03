@@ -16,7 +16,7 @@ const IndexPage = () => (
           <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4" type="video/mp4"/>
         </video>
         <h1>Hello! <br/>I'm Duy.</h1>
-        <p>A full-stack developer living in Atlanta</p>
+        <p>Full-stack developer living in Atlanta</p>
         <Link className="contactBtn" to="#contact">Contact me</Link>
 
         <div className="Logos">
@@ -50,22 +50,26 @@ const IndexPage = () => (
     <div id="projects" className="cards">
       <h1>Projects</h1>
         <div className="cardGroup">
-          <Card 
+          <Card
+            src='https://github.com/duylnguyen/Project4-POS-System' 
             title="POS System"
             text="Using: React, Django"
             image={require('../images/background.jpg')} 
           />
-          <Card 
+          <Card
+            src='https://github.com/duylnguyen/Project3-Fundamental-Learning' 
             title="Learning Center"
             text="Using: React, Node.js"
             image={require('../images/background.jpg')} 
           />
-          <Card 
+          <Card
+            src='https://github.com/duylnguyen/Project2-Entertainment-Room-App' 
             title="Entertainment Room"
             text="Using: HanddleBar, Node.js"
             image={require('../images/background.jpg')} 
           />
-          <Card 
+          <Card
+            src='https://github.com/duylnguyen/Project1-Blackjack-Game' 
             title="BlackJack Game"
             text="Using: Javascript, jQuery"
             image={require('../images/background.jpg')} 

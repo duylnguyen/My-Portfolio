@@ -23,3 +23,14 @@
     width: 80px;
     margin: 15px 15px 5px 15px;
 }
+
+.githubLink img {
+    display: block;
+    max-width: 60px;
+    margin: 0px auto;
+    margin-top: 30px;
+}
+
+.githubLink img:hover {
+    transform: scale(1.5, 1.5);
+}
