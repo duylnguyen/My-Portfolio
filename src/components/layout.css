@@ -18,15 +18,6 @@ a {
   font-weight: 600;
 }
 
-/* .Hero {
-  max-width: 100%;
-  height: 780px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  overflow-anchor: hidden;
-} */
-
 .Hero {
   max-width: 100%;
   margin: 0 auto;
@@ -35,14 +26,6 @@ a {
   position: relative;
   overflow-anchor: hidden;
 }
-
-/* .HeroGroup .video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: -100;
-} */
 
 .HeroGroup .video {
   position: absolute;
@@ -224,4 +207,67 @@ a {
   margin: 40px auto;
   color: white;
   text-align: center;
+}
+
+.Contact {
+  max-width: 100%;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow-anchor: hidden;
+}
+
+.ContactGroup h1 {
+  margin: 50px 20px;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  background: linear-gradient(104deg, #050A27 0%, #4A548C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ContactGroup p {
+  max-width: 500px;
+  margin: 40px auto;
+  color: black;
+  text-align: center;
+}
+
+/* .ContactGroup a {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  background: rgba(0,0,0, 0.6);
+  padding: 9px 20px;
+  border: 1px solid rgba(255,255,255, 0.5);
+  border-radius: 20px;
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+} */
+
+/* .Contact a:hover {
+  background: white;
+  color: black;
+} */
+
+.boxGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 1060px) {
+  .boxGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .boxGroup {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

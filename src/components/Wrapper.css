@@ -1,0 +1,25 @@
+.wrapper {
+    width: 300px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0, 0.25); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+}
+
+.wrapper:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 30px 60px rgba(0,0,0, 0.8);
+    background-color: black;
+    color: aliceblue;
+}
+
+.wrapper img {
+    width: 80px;
+    margin: 15px 15px 5px 15px;
+}

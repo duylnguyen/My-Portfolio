@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Card from "../components/Card"
 import Container from "../components/Container"
+import Wrapper from "../components/Wrapper"
 
 const IndexPage = () => (
   <Layout>
@@ -109,8 +110,28 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div id="contact" className="contact">
-      <h1>Contacts</h1>
+    <div id="contact" className="Contact">
+      <div className="ContactGroup">
+        <h1>Contacts</h1>
+        <p>I'm happy to hear from you, regardless whether you are interested in my skills or suggestions to improve my projects.
+          Please contact me.</p>
+        <a>E-Mail</a>
+        <p>duyl.nguyen.ga@gmail.com</p>
+        <div className="boxGroup">
+        <Wrapper 
+          image={require('../images/github-logo.png')} 
+          text="GitHub"
+        />
+        <Wrapper 
+          image={require('../images/linkedin-logo.png')} 
+          text="LinkedIn"
+        />
+        <Wrapper 
+          image={require('../images/twitter-logo.png')} 
+          text="Twitter"
+        />
+        </div>
+      </div>
     </div>
   </Layout>
 )
