@@ -54,25 +54,29 @@ const IndexPage = () => (
             src='https://github.com/duylnguyen/Project4-POS-System' 
             title="POS System"
             text="Using: React, Django"
-            image={require('../images/background.jpg')} 
+            image={require('../images/background.jpg')}
+            host='https://pos-project4.herokuapp.com/' 
           />
           <Card
             src='https://github.com/duylnguyen/Project3-Fundamental-Learning' 
             title="Learning Center"
             text="Using: React, Node.js"
-            image={require('../images/background.jpg')} 
+            image={require('../images/background.jpg')}
+            host='https://fundamental-learning.herokuapp.com/' 
           />
           <Card
             src='https://github.com/duylnguyen/Project2-Entertainment-Room-App' 
             title="Entertainment Room"
             text="Using: HanddleBar, Node.js"
-            image={require('../images/background.jpg')} 
+            image={require('../images/background.jpg')}
+            host='https://lit-chamber-33132.herokuapp.com/media' 
           />
           <Card
             src='https://github.com/duylnguyen/Project1-Blackjack-Game' 
             title="BlackJack Game"
             text="Using: Javascript, jQuery"
-            image={require('../images/background.jpg')} 
+            image={require('../images/background.jpg')}
+            host='https://blackjack-game-building.netlify.com/' 
           />
         </div>
     </div>
