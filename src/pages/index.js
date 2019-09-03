@@ -2,10 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import Card from "../components/Card";
-
+import Card from "../components/Card"
 
 const IndexPage = () => (
   <Layout>
@@ -17,7 +15,7 @@ const IndexPage = () => (
         </video>
         <h1>Hello! <br/>I'm Duy.</h1>
         <p>A full-stack developer living in Atlanta</p>
-        <Link className="contactBtn" to="/contact">Contact me</Link>
+        <Link className="contactBtn" to="#contact">Contact me</Link>
 
         <div className="Logos">
           <img src={require('../images/javascript.png')} width="80"/>
@@ -47,12 +45,43 @@ const IndexPage = () => (
         </svg>
       </div>
     </div>
-    <div className="cards">
+    <div id="projects" className="cards">
       <h1>Projects</h1>
-      <Card 
-        title="POS System"
-        text="Using: React, Django" 
-      />
+        <div className="cardGroup">
+          <Card 
+            title="POS System"
+            text="Using: React, Django"
+            image={require('../images/background.jpg')} 
+          />
+          <Card 
+            title="Learning Center"
+            text="Using: React, Node.js"
+            image={require('../images/background.jpg')} 
+          />
+          <Card 
+            title="Entertainment Room"
+            text="Using: HanddleBar, Node.js"
+            image={require('../images/background.jpg')} 
+          />
+          <Card 
+            title="BlackJack Game"
+            text="Using: Javascript, jQuery"
+            image={require('../images/background.jpg')} 
+          />
+        </div>
+    </div>
+    <div id="about" className="About">
+      <div className="AboutGroup">
+        <h1>About Me</h1>
+        <video className="video" muted autoPlay loop>
+          <source src="https://www.videvo.net/videvo_files/converted/2018_03/preview/180226_A_03.mp424222.webm"/>
+        </video>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sunt expedita neque facilis ad necessitatibus deleniti a accusamus officia ullam magni excepturi, corporis qui, vitae animi quaerat, aliquid est in.</p>
+        <h1>Skills</h1>
+      </div>
+    </div>
+    <div id="contact" className="contact">
+      <h1>Contacts</h1>
     </div>
   </Layout>
 )
