@@ -18,6 +18,13 @@ a {
   font-weight: 600;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .Hero {
   max-width: 100%;
   margin: 0 auto;
@@ -277,6 +284,6 @@ a {
 
 .sendMail {
   width: 22px;
-  background: transparent;
+  background: rgb(90, 189, 255);
   margin-right: 0.5rem;
 }

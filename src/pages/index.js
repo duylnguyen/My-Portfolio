@@ -121,15 +121,18 @@ const IndexPage = () => (
         </a>
         <p>duyl.nguyen.ga@gmail.com</p>
         <div className="boxGroup">
-        <Wrapper 
+        <Wrapper
+          src='https://github.com/duylnguyen'
           image={require('../images/github-logo.png')} 
           text="GitHub"
         />
-        <Wrapper 
+        <Wrapper
+          src='https://www.linkedin.com/in/duy-le-nguyen/'
           image={require('../images/linkedin-logo.png')} 
           text="LinkedIn"
         />
-        <Wrapper 
+        <Wrapper
+          src='https://twitter.com/duynguyenga' 
           image={require('../images/twitter-logo.png')} 
           text="Twitter"
         />
