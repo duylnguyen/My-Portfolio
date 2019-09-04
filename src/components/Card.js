@@ -3,11 +3,11 @@ import './Card.css'
 
 const Card = (props) => (
     <div>
-        <a href={props.host} type="host" target="_blank">
+        <a href={props.host} type="host" target="_blank" rel="noopener noreferrer">
             <div className="card">
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
-                <img src={props.image} />
+                <img src={props.image} alt="cover"/>
             </div>
         </a>
         <div className="githubLink">

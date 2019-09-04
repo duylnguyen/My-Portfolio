@@ -180,7 +180,7 @@ a {
   overflow-anchor: hidden;
 }
 
-.AboutGroup .video {
+.AboutGroup img {
   position: absolute;
   top: 0;
   left: 0;
@@ -192,6 +192,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 } 
 
 .AboutGroup h1 {
@@ -199,7 +201,7 @@ a {
   font-size: 60px;
   text-align: center;
   font-weight: 700;
-  background: linear-gradient(104deg, rgb(143, 144, 150) 0%, rgb(219, 221, 233) 100%);
+  background: linear-gradient(104deg, rgb(21, 21, 24) 0%, rgb(43, 44, 49) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -207,7 +209,7 @@ a {
 .AboutGroup p {
   max-width: 500px;
   margin: 40px auto;
-  color: #E69A8DFF;
+  color: rgb(32, 30, 29);
   text-align: center;
 }
 
@@ -258,7 +260,7 @@ a {
 }
 
 .boxGroup {
-  margin: 50px 40px 100px;
+  margin: 40px 40px 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -282,3 +284,17 @@ a {
   background: rgb(90, 189, 255);
   margin-right: 0.5rem;
 }
+
+/* .intro {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+} */

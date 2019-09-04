@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,18 +14,20 @@ const IndexPage = () => (
         <video className="video" muted autoPlay loop>
           <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4"/>
         </video>
-        <h1>Hello! <br/>I'm Duy.</h1>
-        <p>Full-stack developer living in Atlanta</p>
+        <div className="intro">
+          <h1>Hello! <br/>I'm Duy.</h1>
+          <p>Full-stack developer living in Atlanta</p>
+        </div>
         <div className= "logo">
           <img src={require('../images/duy1.jpg')} alt="PersonalImage"/>
         </div>
       
         <div className="Logos">
-          <img src={require('../images/javascript.png')} width="80"/>
-          <img src={require('../images/css.png')} width="80"/>
-          <img src={require('../images/nodejslogo.png')} width="80"/>
-          <img src={require('../images/react.png')} width="80"/>
-          <img src={require('../images/pythondjango.png')} width="80"/>
+          <img src={require('../images/javascript.png')} width="80" alt="icon"/>
+          <img src={require('../images/css.png')} width="80" alt="icon"/>
+          <img src={require('../images/nodejslogo.png')} width="80" alt="icon"/>
+          <img src={require('../images/react.png')} width="80" alt="icon"/>
+          <img src={require('../images/pythondjango.png')} width="80" alt="icon"/>
         </div>
 
         <svg width="100%" height="172" viewBox="0 0 100% 172" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,9 +86,10 @@ const IndexPage = () => (
     <div id="about" className="About">
       <div className="AboutGroup">
         <h1>About Me</h1>
-        <video className="video" muted autoPlay loop>
+        {/* <video className="video" muted autoPlay loop>
           <source src="https://www.videvo.net/videvo_files/converted/2018_03/preview/180226_A_03.mp424222.webm"/>
-        </video>
+        </video> */}
+        <img src={require('../images/CodingBackground.png')} alt="background"/>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sunt expedita neque facilis ad necessitatibus deleniti a accusamus officia ullam magni excepturi, corporis qui, vitae animi quaerat, aliquid est in.</p>
         <h1>Skills</h1>
         <div className="cardGroup">
@@ -95,27 +97,23 @@ const IndexPage = () => (
             title="Languages"
             text="JavaScript"
             text1="Python"
-            image={require('../images/paperBackground.jpg')} 
           />
           <Container
             title="Frameworks"
             text="React"
             text1="Node.js"
             text2="Django"
-            image={require('../images/paperBackground.jpg')} 
           />
           <Container
             title="Libraries"
             text="Semantic-React-UI"
             text1="jQuery"
             text2="BootStrap4"
-            image={require('../images/paperBackground.jpg')} 
           />
           <Container 
             title="Database"
             text="MongoDB"
             text1="PostgreSQL"
-            image={require('../images/paperBackground.jpg')} 
           />
         </div>
       </div>
@@ -126,7 +124,7 @@ const IndexPage = () => (
         <p>I'm happy to hear from you, regardless whether you are interested in my skills or suggestions to improve my projects.
           Please contact me.</p>
         <a className="emailBtn" href="mailto:duyl.nguyen.ga@gmail.com">
-          <img className="sendMail" src={require('../images/send-email1.jpeg')}/>
+          <img className="sendMail" src={require('../images/send-email1.jpeg')} alt="email-icon"/>
           E-Mail
         </a>
         <p>duyl.nguyen.ga@gmail.com</p>

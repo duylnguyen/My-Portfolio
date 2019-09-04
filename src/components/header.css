@@ -16,6 +16,7 @@
 }
 
 .HeaderHide {
+    position: absolute;
     background: black;
 }
 

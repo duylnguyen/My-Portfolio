@@ -8,7 +8,7 @@ const Container = (props) => (
         <div id="text">{props.text1}</div>
         <div id="text">{props.text2}</div>
         <div id="text">{props.text4}</div>
-        <img src={props.image} />
+        {/* <img src={props.image} /> */}
     </div>
 )
 
