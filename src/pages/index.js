@@ -13,12 +13,14 @@ const IndexPage = () => (
       <div className="HeroGroup">
         <SEO title="Home" />
         <video className="video" muted autoPlay loop>
-          <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4" type="video/mp4"/>
+          <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4"/>
         </video>
         <h1>Hello! <br/>I'm Duy.</h1>
         <p>Full-stack developer living in Atlanta</p>
-        <Link className="contactBtn" to="#contact">Contact me</Link>
-
+        <div className= "logo">
+          <img src={require('../images/duy1.jpg')} alt="PersonalImage"/>
+        </div>
+      
         <div className="Logos">
           <img src={require('../images/javascript.png')} width="80"/>
           <img src={require('../images/css.png')} width="80"/>

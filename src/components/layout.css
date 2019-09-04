@@ -13,7 +13,6 @@ body {
 }
 
 a {
-  color: #5334F5;
   text-decoration: none;
   font-weight: 600;
 }
@@ -65,12 +64,17 @@ a {
 .HeroGroup {
   margin: 0 auto;
   max-width: 500px;
-  padding: 150px 50px;
+  padding: 120px 50px;
   text-align: center;
 }
 
+.logo img {
+  width: 180px;
+  /* border-radius: 10%; */
+}
+
 .Hero h1 {
-  margin: 20px 0;
+  margin: 0 auto;
   color: white;
   font-size: 50px;
   line-height: 1;
@@ -90,17 +94,8 @@ a {
   opacity: 0;
 }
 
-.Hero a {
-  font-size: 20px;
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
-  background: rgba(0,0,0, 0.6);
-  padding: 9px 20px;
-  border: 1px solid rgba(255,255,255, 0.5);
-  border-radius: 20px;
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-  z-index: 1;
+.contactBtn {
+  margin: 50px 0;
 }
 
 .Hero a:hover {
@@ -135,7 +130,7 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 40px;
-  margin: 100px 0;
+  margin: 120px 0px 110px 0px;
   justify-items: center;
   z-index: 1;
 }
@@ -212,7 +207,7 @@ a {
 .AboutGroup p {
   max-width: 500px;
   margin: 40px auto;
-  color: white;
+  color: #E69A8DFF;
   text-align: center;
 }
 
