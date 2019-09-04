@@ -28,9 +28,9 @@ class Header extends React.Component {
   }
 
   render() {
-    let classHide =this.state.hidden?"Hide":""
-    return(
+    let classHide =this.state.hidden ? "Hide":""
 
+    return(
       <header className={"Header" + classHide}>
         <div className="HeaderGroup">
           <Link to="/">Home</Link>
