@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-.container p {
+#text {
     color: black;
     font-size: 18px;
     margin: 5px auto;

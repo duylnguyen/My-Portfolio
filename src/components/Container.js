@@ -4,10 +4,10 @@ import './Container.css'
 const Container = (props) => (
     <div className="container">
         <h3>{props.title}</h3>
-        <p>{props.text}</p>
-        <p>{props.text1}</p>
-        <p>{props.text2}</p>
-        <p>{props.text4}</p>
+        <div id="text">{props.text}</div>
+        <div id="text">{props.text1}</div>
+        <div id="text">{props.text2}</div>
+        <div id="text">{props.text4}</div>
         <img src={props.image} />
     </div>
 )
