@@ -85,11 +85,11 @@ const IndexPage = () => (
     </div>
     <div id="about" className="About">
       <div className="AboutGroup">
-        <h1>About Me</h1>
+        <h1>About</h1>
         <img src={require('../images/CodingBackground.png')} alt="background"/>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam sunt expedita neque facilis ad necessitatibus deleniti a accusamus officia ullam magni excepturi, corporis qui, vitae animi quaerat, aliquid est in.</p>
         <h1>Skills</h1>
-        
+
         <div className="cardGroup">
           <Container 
             title="Languages"
