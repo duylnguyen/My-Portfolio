@@ -14,13 +14,16 @@ const IndexPage = () => (
         <video className="video" muted autoPlay loop>
           <source src="https://static.videezy.com/system/resources/previews/000/011/021/original/Looping_Black_Triangular_Background_-_Enchanted_Media.mp4"/>
         </video>
-        <div className="intro">
-          <h1>Hello! <br/>I'm Duy.</h1>
-          <p>Full-stack developer living in Atlanta</p>
-        </div>
+
         <div className= "logo">
           <img src={require('../images/duy1.jpg')} alt="PersonalImage"/>
         </div>
+
+        <div className="intro">
+          <h1>Hello! I'm Duy Nguyen</h1>
+          <p>Full-stack developer living in Atlanta</p>
+        </div>
+        
       
         <div className="Logos">
           <img src={require('../images/javascript.png')} width="80" alt="icon"/>

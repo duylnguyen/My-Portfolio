@@ -63,18 +63,19 @@ a {
 
 .HeroGroup {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 800px;
   padding: 120px 50px;
   text-align: center;
 }
 
 .logo img {
-  width: 180px;
-  /* border-radius: 10%; */
+  width: 220px;
+  margin: 20px 0;
 }
 
 .Hero h1 {
   margin: 0 auto;
+  margin-top: 150px;
   color: white;
   font-size: 50px;
   line-height: 1;
@@ -130,9 +131,14 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 40px;
-  margin: 120px 0px 110px 0px;
+  margin: 50px 0px 110px 0px;
   justify-items: center;
   z-index: 1;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 @media (max-width: 640) {
@@ -285,16 +291,3 @@ a {
   margin-right: 0.5rem;
 }
 
-/* .intro {
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0, 0.4); 
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-} */
